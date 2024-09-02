@@ -29,7 +29,7 @@ function HomeSlider() {
             alt="slider image 1"
             className=" block w-full h-[250px] md:h-[400px] lg:h-[500px] "
           />
-          <div className="absolute z-10 top-[-10%] left-10 right-0 bottom-0 flex flex-col gap-2  md:gap-5 justify-center p-5">
+          <div className="absolute z-10 top-[-10%] left-0  lg:left-10  right-0 bottom-0 flex flex-col gap-2  md:gap-5 justify-center p-5">
             <h2 className=" uppercase font-bold font-Hackney  text-[#316431]  w-[200px] md:w-[350px] lg:w-[550px] text-3xl md:text-5xl lg:text-7xl  select-none pointer-events-none">
               Everything You Need All in One Place
             </h2>
@@ -60,7 +60,7 @@ function HomeSlider() {
             alt="slider image 2"
             className=" block w-full h-[250px] md:h-[400px] lg:h-[500px] "
           />
-          <div className="absolute z-10 top-[-10%] left-10 right-0 bottom-0 flex flex-col gap-2  md:gap-5 justify-center p-5">
+          <div className="absolute z-10 top-[-10%] left-0 lg:left-10  right-0 bottom-0 flex flex-col gap-2  md:gap-5 justify-center p-5">
             <div>
               <p className=" uppercase font-bold font-Hackney text-[#682b4c] text-3xl md:text-5xl lg:text-6xl">
                 chocozay
@@ -89,7 +89,7 @@ function HomeSlider() {
             alt="slider image 3"
             className=" block w-full h-[250px] md:h-[400px] lg:h-[500px] "
           />
-          <div className="absolute z-10 top-[-10%] left-10 right-0 bottom-0 flex flex-col gap-2  md:gap-5 justify-center p-5">
+          <div className="absolute z-10 top-[-10%] left-0 lg:left-10  right-0 bottom-0 flex flex-col gap-2  md:gap-5 justify-center p-5">
             <div>
               <p className=" uppercase font-bold font-Hackney text-[#36277A] text-3xl md:text-5xl lg:text-7xl">
                 Lasta

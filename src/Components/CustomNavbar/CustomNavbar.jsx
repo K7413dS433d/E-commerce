@@ -97,7 +97,7 @@ function CustomNavbar() {
                     <Dropdown.Item>Profile</Dropdown.Item>
                   </NavLink>
                   <NavLink to="/allOrders">
-                    <Dropdown.Item>All Orders</Dropdown.Item>
+                    <Dropdown.Item>Orders History</Dropdown.Item>
                   </NavLink>
                   <NavLink to="/contactUs">
                     <Dropdown.Item>Contact Us</Dropdown.Item>

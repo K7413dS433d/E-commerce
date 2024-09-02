@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import "./App.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -29,7 +29,7 @@ import ResetPassword from "./Components/ForgetPassword/ResetPassword/ResetPasswo
 import ContactUs from "./Components/ContactUs/ContactUs";
 import UserProfile from "./Components/UserProfile/UserProfile";
 
-const route = createBrowserRouter([
+const route = createHashRouter([
   {
     path: "/",
     element: <Layout />,

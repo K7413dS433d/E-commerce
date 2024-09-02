@@ -147,7 +147,7 @@ function Home() {
           <div className=" grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4  justify-center justify-items-center gap-7">
             {allProducts?.data.data.slice(0, 8).map((item, idx) => {
               return (
-                <Card className="w-full " key={idx}>
+                <Card className="w-[80%] sm:w-[60%] md:w-[80%] lg:w-full " key={idx}>
                   <Link to={`/productDetails/${item._id}`}>
                     <img
                       className="h-[230px] object-contain w-full block "

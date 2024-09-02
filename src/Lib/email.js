@@ -4,6 +4,11 @@ const template_id = import.meta.env.VITE_TEMPLATE_ID; // Replace with your Email
 const user_id = import.meta.env.VITE_USER_ID; // Replace with your EmailJS public key
 const defaultEmail = import.meta.env.VITE_DEFAULT_EMAIL; // Replace with your default email
 
+//!website link https://dashboard.emailjs.com/sign-in
+//!you will find service id here https://dashboard.emailjs.com/admin from the left side bar choose email services
+//!you will find template id here https://dashboard.emailjs.com/admin from the left side bar choose email templates
+//!you will find user id here https://dashboard.emailjs.com/admin from the left side bar choose account and uou will find public key
+
 async function sendEmail(
   fromName,
   Message,

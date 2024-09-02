@@ -24,7 +24,7 @@ function Footer() {
     try {
       await sendEmail(
         "Fresh Cart",
-        "APP LINK", //message contains app link
+        "https://k7413ds433d.github.io/E-commerce/", //message contains app link
         defaultEmail,
         mail.email
       );

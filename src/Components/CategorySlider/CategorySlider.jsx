@@ -57,7 +57,7 @@ function CategorySlider() {
               <img
                 src={item.image}
                 alt={item.name}
-                className="block  h-[200px] w-full"
+                className="block h-[100px]  md:h-[200px] w-full object-cover  "
               />
               <p className="w-full text-center text-secondary">{item.name}</p>
             </div>
