@@ -117,16 +117,16 @@ function AllOrders() {
                     setToggle(false);
                   } else setToggle(item._id);
                 }}
-                className=" flex gap-1 items-center justify-center md:justify-start mb-1"
+                className=" flex gap-1 items-center justify-center md:justify-start mb-1 cursor-pointer"
               >
-                <div className="h-5 w-5 rounded-full border border-primary flex items-center justify-center">
+                <div className="h-5 w-5 rounded-full border border-primary flex items-center justify-center ">
                   {toggle === item._id ? (
                     <i className="fa-solid fa-angle-up"></i>
                   ) : (
                     <i className="fa-solid fa-angle-down"></i>
                   )}
                 </div>
-                <p className=" font-semibold fa-sm"> More Details....</p>
+                <p className=" font-semibold fa-sm "> More Details....</p>
               </div>
               {/* cart info  */}
               <div

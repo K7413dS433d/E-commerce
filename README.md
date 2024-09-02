@@ -5,11 +5,13 @@ Fresh Cart is a fully responsive e-commerce website built with modern technologi
 ## Features
 
 - **User Authentication:**
+
   - **Login**: Secure user login with JWT decoding.
   - **Register**: User registration with email verification.
   - **Forgot Password**: Password recovery process.
 
 - **Product Management:**
+
   - **Home**: View featured products and promotions.
   - **Products**: Browse and search through available products.
   - **Product Details**: Detailed view of each product.
@@ -17,12 +19,14 @@ Fresh Cart is a fully responsive e-commerce website built with modern technologi
   - **Brands**: Filter products by brand.
 
 - **User Account Management:**
+
   - **Profile**: View and update user profile information (email, name, phone number).
   - **Orders History**: View past orders and their status.
   - **Cart**: Manage items in the shopping cart.
   - **Wishlist**: Save products for future purchase.
 
 - **Checkout:**
+
   - **Cash Order**: Option to pay with cash on delivery.
   - **Visa**: Option to pay using a Visa card.
 
@@ -30,6 +34,7 @@ Fresh Cart is a fully responsive e-commerce website built with modern technologi
   - **Contact Us**: Get in touch with customer support.
   - **Animations**: Smooth animations using Motion.
   - **Protected Routes**: Ensure secure access to private areas of the site.
+  - **React Context**: Manage global state for the application.
 
 ## Live Demo
 
