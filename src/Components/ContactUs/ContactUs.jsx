@@ -44,7 +44,7 @@ function ContactUs() {
 
   return (
     <section className="bg-white py-20  lg:py-[80px] overflow-hidden relative z-10">
-      <div className="container m-auto lg:m-0">
+      <div className="container m-auto">
         <span className="ml-5 block mb-8 text-base text-primary font-semibold">
           Contact Us
         </span>
