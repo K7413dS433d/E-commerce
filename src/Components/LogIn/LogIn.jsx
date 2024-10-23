@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useFormik } from "formik";
 import { NavLink, useNavigate } from "react-router-dom";
-import * as yup from "yup";
 import { toast } from "react-hot-toast";
 import { useState, useContext, useEffect } from "react";
 import { auth } from "./../../Contexts/AuthContext";
@@ -12,20 +11,6 @@ function LogIn() {
   const { setToken } = useContext(auth);
 
   const navigator = useNavigate();
-
-  const validate = yup.object().shape({
-    email: yup
-      .string()
-      .required("Email is Required")
-      .email("Enter valid email"),
-    password: yup
-      .string()
-      .required("Password is Required")
-      .matches(
-        /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()\-_+=\[\]{}|;:'",.<>?\\\/`~]).{8,16}$/,
-        "Password contains lowercase, uppercase, digit, symbol, 8-16 chars, no spaces."
-      ),
-  });
 
   const initialValues = {
     email: "",
@@ -64,7 +49,6 @@ function LogIn() {
   const formikLogin = useFormik({
     initialValues: initialValues,
     onSubmit: login,
-    validationSchema: validate,
   });
 
   //if logged in redirect to home page
@@ -108,14 +92,6 @@ function LogIn() {
                     value={formikLogin.values.email}
                     onBlur={formikLogin.handleBlur}
                   />
-                  {formikLogin.errors.email && formikLogin.touched.email ? (
-                    <>
-                      <i className=" absolute top-[50%] -translate-y-[50%] right-2 fa-solid fa-circle-exclamation text-red-700"></i>
-                      <p className="absolute text-red-700 left-2 text-sm ">
-                        {formikLogin.errors.email}
-                      </p>
-                    </>
-                  ) : null}
                 </div>
               </div>
               <div>
@@ -136,14 +112,6 @@ function LogIn() {
                     value={formikLogin.values.password}
                     onBlur={formikLogin.handleBlur}
                   />
-                  {formikLogin.errors.password &&
-                  formikLogin.touched.password ? (
-                    <>
-                      <p className=" text-red-700 pl-2 text-sm ">
-                        {formikLogin.errors.password}
-                      </p>
-                    </>
-                  ) : null}
                 </div>
               </div>
               <div className="flex items-center justify-between">
